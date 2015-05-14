@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Loan Application</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="camera.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="calculator.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="scripts/nav.js"></script>
+<script src="scripts/camera.js" type="text/javascript"></script>
+<script src="scripts/calculator.js" type="text/javascript"></script>
+ <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				
+			});
+                        
+
+		});
+                $(function() {
+                $("#datepicker").datepicker();
+            });
+	</script>
+</head>
+<body>
+    
+<nav>
+  <ul id="menu" class="menu">
+    <li> <a href="index.html" id="home"><span class="active"></span> <span class="wrap"> <span class="link">Home</span> <span class="descr"></span> </span> </a> </li>
+    <li> <a href="#content" id="apply"><img src="images/personal_loan.png" alt=""/><span class="active"></span> <span class="wrap"> <span class="link">Apply Now</span><span class="descr">for a Loan</span></span> </a> </li>
+    <li> <a href="contactus.html" id="contact"> <img src="images/contacts.png" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Contact</span><span class="descr">us Now</span></span> </a> </li>
+    <li> <a href="appointment.html" id="services"> <img src="images/car_repair.png" alt=""/> <span class="active"></span> <span class="wrap"> <span class="link">Services</span><span class="descr">Auto Repair</span></span> </a> </li>
+    
+    
+    
+  </ul>
+</nav>
+    <img src="images/logo.png" alt="" id="slogan"/>
+    <div class="fluid_container"  id="logo" >
+    	
+        <div class="camera_wrap camera_azure_skin" id="camera_wrap">
+            <div data-src="images/approved.png">
+                <div class="camera_caption fadeFromBottom">
+                    Guaranteed Approval! Bad Credit or No Credit OK!! 
+                </div>
+            </div>
+            <div data-src="images/low.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Low Monthly Payments!!</em>
+                </div>
+            </div>
+            <div data-src="images/staff.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>Our Friendly Staff Will Help You Find the Perfect Loan for Your Budget!!</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both; display:block; height:100px"></div>
+    
+    <div id="content"></div>
+    
+    <article class="grid_8" >
+        <div class="indent-left">
+        <h3 class="color-2">Personal Information</h3>
+        <form name="contact" action="submission.html" method="post"  id="theForm">
+                <div>
+                    <label for="title" class="label">Title: </label>
+                    <select>
+                        <option value="mr.">Mr.</option>
+                        <option value="ms.">Ms.</option>
+                        <option value="mrs.">Mrs.</option>
+                    </select> 
+                
+                
+                    <label for="fName" class="label">First Name: </label>
+                    <input name="fName"  id="fName" type="text" placeholder="John" required >
+
+                    <label for="lName" class="label">Last Name: </label>
+                    <input name="lName"  id="lName" type="text" placeholder="Doe"required>
+
+                </div>
+                <div>
+                    <label for="street" class="label">Street: </label>
+                    <input name="street"  id="street" type="text" placeholder="123 Elm Street"required>
+
+               
+                    <label for="city" class="label">City: </label>
+                    <input name="city"  id="city" type="text" placeholder="Roanoke"required>
+
+                
+                    <label for="state" class="label" >State: </label>
+                    <select required>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option selected value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                                          
+                <div>
+                    <label for="phone" class="label">Phone</label>
+                    <input placeholder="(xxx) xxx-xxxx" 
+                           name="phone"  id="phone" type="text" required>
+
+                
+                    <label for="email" class="label">Email</label>
+                    <input id="email_addr"  type="text"  id="email" placeholder="JohnDoe@gmail.com" required >
+                    
+                    <label>Re-Type Email</label>
+                    <input type="email" id="email_repeat" name="email_addr_repeat" placeholder="JohnDoe@gmail.com" required 
+                    oninput="check(this)">
+
+                </div>
+                <div>
+                    <label for="date" class="label">Date of Birth</label>
+                    <input name="date" id="date" type="date" placeholder="xx/xx/xxxx" required>
+
+                </div>
+                 <div>
+                    <label for="ssn" class="label">SSN</label>
+                    <input name="ssn" id="ssn" type="text" placeholder="xxx-xx-xxxx" required>
+
+                </div>                                      
+                <h3>Financial Information:</h3>
+                <div>
+
+
+
+                    <label for="reasonForAppointment" class="label">Income</label>
+                    <select id="IncomeType" name="IncomeType" data-val-required="Income Type is required." data-val="true" required>
+                    <option value="">- Select -</option>
+                    <option value="Job">Job Income</option>
+                    <option value="SelfEmployed">Self Employed</option>
+                    <option value="SSI">Social Security/Disability</option>
+                    <option value="Retirement">Retirement/Pension</option>
+                    <option value="Other">Other</option>
+                    </select>
+                    
+                    
+                </div>
+                <div>
+                    <label for="employer" class="label">Employer/Company</label>
+                    <input name="employer"  id="employer" type="text" required>
+                </div>
+                <div>
+                     <label for="work_phone" class="label">Work Phone</label>
+                    <input placeholder="(xxx) xxx-xxxx" name="work_phone"  id="work_phone" type="text" required>
+                    
+                </div>
+                <div>
+                    <label for="salary" class="label">Salary</label>
+                    <input name="salary"  id="salary" type="text" placeholder="" required>
+                </div>
+                <div>
+                <label for="payment" class="label">Payment Schedule</label>
+                    <select id="payment" name="payment"  required>
+                    <option value="">- Select -</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="bi-weekly">Bi-weekly</option>
+                </select>
+                </div>
+                <h3>Bank Information:</h3>
+                <div>
+                    <label for="bank" class="label">Institution</label>
+                    <input data-validation="required" name="bank"  id="bank" type="text" placeholder="Bank of America" required>
+                </div>
+                <div>
+                <label for="account" class="label">Type of Account</label>
+                    <select id="IncomeType" name="IncomeType" data-val-required="Income Type is required." data-val="true" required>
+                    <option value="">- Select -</option>
+                    <option value="checking">Checking</option>
+                    <option value="savings">Savings</option>
+                </select>
+                </div>
+                <h3>Loan Information:</h3>
+                <div>
+                    <label for="loanAmt class="label">Amount of Loan Applying For</label>
+                    <input name="loanAmt"  id="loanAmt" type="text" placeholder="" required>
+                </div>
+                
+               
+
+                <div>
+                    <input class="button" type="submit" name="submit" id="submit" value="Submit">
+                    
+                </div>
+            </form>
+                                            </div>
+                                        </article>
+    <script>
+        function check(input) {
+  if (input.value != document.getElementById('email_addr').value) {
+    input.setCustomValidity('The two email addresses must match.');
+  } else {
+    // input is valid -- reset the error message
+    input.setCustomValidity('');
+  }
+}
+        
+        </script>
+    
+    
+    <article class="grid_4">
+         <div class="indent-left2">
+            <div class="box">
+                <div class="padding">
+                    <div class="wrapper">
+                        <figure class="img-indent"></figure>
+                                                          
+                    </div>
+                    <form name="loandata">
+                        <h2 id="calcTitle">Car Loan Calculator</h2>
+                                                            
+    <table>
+    <tr><td colspan="3" class="color-1"><b>Enter Loan Information:</b></td></tr>
+    <tr>
+      
+      <td class="color-1">Amount of the loan (any currency):</td>
+      <td><input type="text" name="principal" size="12" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      
+      <td class="color-1">Annual percentage rate of interest:</td>
+      <td><input type="text" name="interest" size="12" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr>
+      
+      <td class="color-1">Repayment period in years:</td>
+      <td><input type="text" name="years" size="12" 
+                 onchange="calculate();"></td>
+    </tr>
+    <tr><td colspan="3">
+      <input type="button" value="Calculate Loan" onclick="calculate();">
+    </td></tr>
+    <br>
+    <tr><td colspan="3" class="color-1" >
+      <b>Payment Information:</b>
+    </td></tr>
+    <tr>
+      
+      <td class="color-1">Your monthly payment will be:</td>
+      <td><input type="text" name="payment" size="12"></td>
+    </tr>
+    <tr>
+      
+      <td class="color-1">Your total payment will be:</td>
+      <td><input type="text" name="total" size="12"></td>
+    </tr>
+    <tr>
+      
+      <td class="color-1">Your total interest payments will be:</td>
+      <td><input type="text" name="totalinterest" size="12"></td>
+    </tr>
+  </table>
+</form>
+                                         
+        </div>
+    </div>
+ </div>
+</article>
+    
+    
+    
+   
+
+</body>
+</html>
